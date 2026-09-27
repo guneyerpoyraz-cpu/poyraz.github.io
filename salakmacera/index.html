@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salak Macera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🤪 salakmacera.com</div>
+    <nav>
+      <button data-page="home">Ana Sayfa</button>
+      <button data-page="adventure">Salak Maceralar</button>
+      <button data-page="math">Matematik</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-emoji">🤪</div>
+        <h1>SALAK MACERA</h1>
+        <p>Saçma maceralara atıl, kolay matematik sorularını çöz ve zort olma! 💀</p>
+        <div class="buttons">
+          <button class="primary" data-page="adventure">🚀 Maceraya Git</button>
+          <button class="secondary" data-page="math">🧮 Test Çöz</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article>
+          <span>🤪</span>
+          <h2>Salak Maceralar</h2>
+          <p>Kararlarını ver, hikâyeyi ilerlet. Mantık aranmaz.</p>
+        </article>
+        <article>
+          <span>🧮</span>
+          <h2>Zort Matematik</h2>
+          <p>Kolaydan başlayıp giderek zorlaşan mini testler.</p>
+        </article>
+        <article>
+          <span>🏆</span>
+          <h2>Skorunu Gör</h2>
+          <p>Testin sonunda kaç doğru yaptığını öğren.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="adventure" class="page">
+      <div class="section-title">
+        <h1>🤪 Salak Macera #1</h1>
+        <p>Bir sabah uyandın. Buzdolabından garip bir ses geliyor...</p>
+      </div>
+      <div id="story" class="story-box"></div>
+      <div id="choices" class="choices"></div>
+      <button id="restartStory" class="secondary hidden">🔄 Macerayı Baştan Başlat</button>
+    </section>
+
+    <section id="math" class="page">
+      <div class="section-title">
+        <h1>🧮 Zort Matematik</h1>
+        <p>Bir seviye seç ve bakalım matematik seni zortlatabilecek mi.</p>
+      </div>
+      <div class="difficulty">
+        <button class="level" data-level="easy">🟢 Kolay</button>
+        <button class="level" data-level="medium">🟡 Orta</button>
+        <button class="level" data-level="zort">🔴 ZORT</button>
+      </div>
+      <div id="quiz" class="quiz hidden">
+        <div class="quiz-top">
+          <span id="questionNumber"></span>
+          <span id="score">Skor: 0</span>
+        </div>
+        <h2 id="question"></h2>
+        <div id="answers" class="answers"></div>
+      </div>
+      <div id="result" class="result hidden"></div>
+    </section>
+  </main>
+
+  <footer>salakmacera.com — Matematik fazla ciddiye alınmamalıdır. 🤪</footer>
+  <script src="script.js"></script>
+</body>
+</html>
